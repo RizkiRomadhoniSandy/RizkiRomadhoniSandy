@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONVERSI NILAI</title>
+    <script language="JavaScript">
+        document.write("Dimodifikasi Terakhir Pada " + document.lastModified)
+
+        function konversi() {
+            var x = document.kirim.angka.value
+            if (x <= 40)
+                document.kirim.huruf.value = "E"
+            else if (41 <= x && 55 >= x)
+                document.kirim.huruf.value = "D"
+            else if (56 <= x && 60 >= x)
+                document.kirim.huruf.value = "C"
+            else if (61 <= x && 65 >= x)
+                document.kirim.huruf.value = "BC"
+            else if (66 <= x && 70 >= x)
+                document.kirim.huruf.value = "B"
+            else if (71 <= x && 80 >= x)
+                document.kirim.huruf.value = "AB"
+            else if (81 <= x && 100 >= x)
+                document.kirim.huruf.value = "A"
+            else
+                window.alert("NULL!")
+        }
+    </script>
+</head>
+
+<body>
+    <h1>KONVERSI NILAI (Angka ke Huruf)</h1>
+    <form action="" name="kirim">
+        Masukan Nilai :
+        <input type="text" name="angka" id="">
+        <br> <br>
+        Hasil Konversi Huruf :
+        <input type="text" name="huruf" id="">
+        <br> <br>
+        <input type="button" name="button1" value="Konversi" onclick="konversi()">
+<html>
+<head>
+    <title> bacground </title>
+<style type="text/css">
+body
+{
+    font-family: geneva, arial;
+    font-size: 20px;
+    color:white;
+    background-color: blue;
+}
+</style>
+</head>
+</body>
+</html>
