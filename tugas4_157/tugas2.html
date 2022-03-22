@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas 2 Even Double Click</title>
+    <script src="/tugas4_157/js/jquery-3.6.0.min.js"></script>
+    <script>
+       $(document).ready(function() {
+        $("div").dblclick(function() {
+        $("#kotak1").dblclick(function() {
+        $("#kotak1").addClass("warna");
+        $("#kotak2").dblclick(function() {
+        $("#kotak2").addClass("warna2");
+        $("#kotak3").dblclick(function() {
+        $("#kotak3").addClass("warna3");
+        $("#kotak4").dblclick(function() {
+        $("#kotak4").addClass("warna4");
+        })
+        })
+        })
+        })
+        })
+       });
+       </script>
+       <style>
+         div {
+           width: 70px;
+           height: 70px;
+           background-color: yellow ;
+           border: 2px solid black;
+           padding: 0 10px;
+           float: left;
+           margin: 5px;
+           cursor: pointer;
+         }
+         .warna {
+         background-color: #DAB88B;}
+         .warna2 {
+         background-color: #F3E9DD;}
+         .warna3 {
+         background-color: #FDF6EC;}
+         .warna4 {
+         background-color: #B7CADB;}
+       </style>
+    </head>
+    <body>
+    <h2> Double Click Kotak Berubah Warna </h2>
+    <p> Double click untuk merubah warna</p>
+    <div id="kotak1"></div>
+    <div id="kotak2"></div>
+    <div id="kotak3"></div>
+    <div id="kotak4"></div>
+    </body>
+    </html>
+    <head>
+        <title> background-color </title>
+        <style type="text/css">
+        body
+        {
+            font-family: geneva, arial;
+            font-size: 20px;
+            color:gold;
+            background-color: green;
+        }
+        </style>
+        </head>
+        </body>
+        </html>
+    
